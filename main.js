@@ -1,0 +1,22 @@
+var canvas = new fabric.Canvas('myCanvas');
+ var x= document.getElementById("myAudio");
+function new_image()
+{
+
+fabric.Image.fromURL('BirthdayImage.jpg', function(Img){
+block_Image_object = Img;
+
+block_Image_object.scaletoWidth(700);
+block_Image_object.scaletoHeight(510);
+block_Image_object.set({
+    top:0,
+    left:0
+});
+canvas.add(block_Image_object);
+});
+}
+
+
+function playSound(){
+	document.getElementById("myAudio").play();
+}
